@@ -1,6 +1,6 @@
-# Api-Valter
+# Api-Mocker
 
-Valter is your api contract validator. It is very easy and lightwight only thing that you should do is create a contract in json format
+Api-Mocker is your mock services. It dynamically routes your contract endpoint definitions to mock service resoponses.
 
 ## Installation
 
@@ -8,10 +8,7 @@ download it
 
 ## Usage
 Create sample contract in your folder
-`
-{
-    "producer": "http://yourserviceurl.com",
-    "for": "description",
+`{
     "on": "GET",
     "uri": "/endpoint",
     "expect": {
@@ -29,11 +26,11 @@ Create sample contract in your folder
 
 ### Linux
 
-`node app.js -p "/yourPath"`
+`node app.js -p "/yourMockPath"`
 
 ### Windows
 
-`node app.js -p "c:\yourPath"`
+`node app.js -p "c:\yourMockPath"`
 
 ## Contributing
 
