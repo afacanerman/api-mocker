@@ -1,14 +1,16 @@
 # Api-Mocker
 
-Api-Mocker is your mock services. It dynamically routes your contract endpoint definitions to mock service resoponses.
+Api-Mocker is your dummy data generator. It creates dummy service responses according to your contracts you define for Api-Valter so that while you developing a program in your work station, you do not need any web service to get the data you need. Api-Mocker creates the mock data you need from your contracts. 
+
 
 ## Installation
-
-download it
+* Install nodejs from https://nodejs.org/
+* Clone Api-Mocker into your workspace
 
 ## Usage
-Create sample contract in your folder
-`{
+Create sample.contract file in your contract directory
+```javascript
+{
     "on": "GET",
     "uri": "/endpoint",
     "expect": {
@@ -22,15 +24,13 @@ Create sample contract in your folder
             }
         }
     }
-}`
+}
+```
 
-### Linux
-
-`node app.js -p "/yourMockPath"`
-
-### Windows
-
-`node app.js -p "c:\yourMockPath"`
+### Execute
+Execute in your terminal:
+* `cd cloned-api-mocker-directory`
+* `node app.js -p "/contract-directory"`
 
 ## Contributing
 
@@ -39,4 +39,3 @@ Create sample contract in your folder
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
